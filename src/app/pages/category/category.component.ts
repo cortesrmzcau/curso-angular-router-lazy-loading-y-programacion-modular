@@ -26,7 +26,7 @@ export class CategoryComponent implements OnInit {
     this.route.paramMap
       .pipe(
         switchMap(params => {
-          this.categoryId =params.get('id');
+          this.categoryId = params.get('id');
           if (this.categoryId) {
             return this.productsService.getByCategory(this.categoryId, this.limit, this.offset);
           }
