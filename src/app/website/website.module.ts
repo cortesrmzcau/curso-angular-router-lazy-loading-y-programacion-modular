@@ -15,6 +15,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { SharedModule } from '../shared/shared.module';
+import { QuicklinkModule } from 'ngx-quicklink';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     WebsiteRoutingModule,
     SwiperModule,
-    SharedModule
+    SharedModule,
+    QuicklinkModule
   ]
 })
 export class WebsiteModule { }
