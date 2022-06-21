@@ -5,6 +5,7 @@ import { AuthService } from '../../../services/auth.service';
 import { User } from '../../../models/user.model';
 import { CategoriesService } from 'src/app/services/categories.service';
 import { Category } from 'src/app/models/category.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -21,7 +22,8 @@ export class NavComponent implements OnInit {
   constructor(
     private storeService: StoreService,
     private authService: AuthService,
-    private categoriesService: CategoriesService
+    private categoriesService: CategoriesService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -47,6 +49,12 @@ export class NavComponent implements OnInit {
       .subscribe(data => {
         this.categories = data;
       })
+  }
+
+  logOut() {
+    this.authService.logOut();
+    this.profile = null;
+    this.router.navigate(['/home']);
   }
 
 }
