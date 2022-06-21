@@ -11,6 +11,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { CustomPreloadService } from '../services/custom-preload.service';
 
+import { AuthGuard } from '../guards/auth.guard';
+
 const routes: Routes = [
   {
     path: '',
@@ -59,6 +61,7 @@ const routes: Routes = [
       },
       {
         path: 'profile',
+        canActivate: [AuthGuard],
         component: ProfileComponent
       }
     ]
