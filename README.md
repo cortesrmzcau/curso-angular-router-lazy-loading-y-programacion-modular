@@ -1,3 +1,15 @@
+### 🌟 Practica del Curso de Angular Router: Lazy Loading y Programación Modular en Platzi 💚
+
+🔔 [Demo](https://main--sensational-puffpuff-43c728.netlify.app/)
+
+🔔 Curso de [Angular Router: Lazy Loading y Programación Modular](https://platzi.com/cursos/angular-modular//) en Platzi
+
+#### Estructura del curso:
+- Manejo de Rutas
+- Módulos
+- Precarga de Módulos
+- Guardianes
+
 # MyStoreRouter
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli)
